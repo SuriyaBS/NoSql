@@ -1,0 +1,102 @@
+127.0.0.1:6379> SADD CUSTOMER : Name anu vinoth prem
+(integer) 5
+127.0.0.1:6379> SADD CUSTOMER  : phone_number 0193 4567 2389
+(integer) 4
+127.0.0.1:6379> SADD CUSTOMER  :  Home_type 2bhk 1bhk 1bhk
+(integer) 3
+127.0.0.1:6379> SADD CUSTOMER  : City palani erode tirrupur
+(integer) 4
+127.0.0.1:6379> SADD CONSULTANCY : Location chennai ooty karur
+(integer) 5
+127.0.0.1:6379> SADD CONSULTANCY  : Bank Bob sbi kvb
+(integer) 4
+127.0.0.1:6379> SADD Labour : name kani Ruba Ranjith
+(integer) 5
+127.0.0.1:6379> SADD Labour : position Supervisor helper helper
+(integer) 3
+127.0.0.1:6379> SADD Labour : days_of_work 241 200 198
+(integer) 4
+127.0.0.1:6379> SADD Labour : salary 45000 43000 38000
+(integer) 4
+127.0.0.1:6379> SADD Materials : cement  M20 M50 M80
+(integer) 5
+127.0.0.1:6379> SADD Materials : Steel 30Tmt 120Tmt Tmt
+(integer) 4
+127.0.0.1:6379> SADD Materials : door Pw wpc 50w
+(integer) 4
+127.0.0.1:6379> SADD Materials : Ratio 1:1:5:3 1:2:5:2 1:1:2:1
+(integer) 4
+127.0.0.1:6379> SADD Materials : rock_type brick cement_stone limestone
+(integer) 4
+127.0.0.1:6379> SADD Materials : pipes 10inch 15inch 20inch
+(integer) 4
+127.0.0.1:6379> SMEMBERS CUSTOMER
+ 1) "erode"
+ 2) "palani"
+ 3) "tirrupur"
+ 4) "anu"
+ 5) "2389"
+ 6) "1bhk"
+ 7) "Name"
+ 8) "phone_number"
+ 9) "2bhk"
+10) "Home_type"
+11) "vinoth"
+12) ":"
+13) "prem"
+14) "0193"
+15) "4567"
+16) "City"
+127.0.0.1:6379> SMEMBERS CONSULTANCY
+1) "Bob"
+2) "Bank"
+3) ":"
+4) "chennai"
+5) "sbi"
+6) "Location"
+7) "ooty"
+8) "karur"
+9) "kvb"
+127.0.0.1:6379> SMEMBERS Labour
+ 1) "Ranjith"
+ 2) "position"
+ 3) "198"
+ 4) "Ruba"
+ 5) "Supervisor"
+ 6) "salary"
+ 7) "43000"
+ 8) "helper"
+ 9) "241"
+10) "kani"
+11) "name"
+12) "45000"
+13) "200"
+14) "38000"
+15) ":"
+16) "days_of_work"
+127.0.0.1:6379> SMEMBERS Materials
+ 1) "30Tmt"
+ 2) "1:2:5:2"
+ 3) "Tmt"
+ 4) "15inch"
+ 5) "10inch"
+ 6) "50w"
+ 7) "120Tmt"
+ 8) "cement_stone"
+ 9) ":"
+10) "wpc"
+11) "M20"
+12) "M50"
+13) "1:1:2:1"
+14) "rock_type"
+15) "limestone"
+16) "Ratio"
+17) "door"
+18) "Steel"
+19) "M80"
+20) "1:1:5:3"
+21) "pipes"
+22) "brick"
+23) "20inch"
+24) "cement"
+25) "Pw"
